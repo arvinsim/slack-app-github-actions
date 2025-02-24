@@ -1,5 +1,9 @@
-import 'dotenv/config'
+// import 'dotenv/config'
+// import { App } from '@slack/bolt';
+
+require('dotenv').config()
 const { App } = require('@slack/bolt');
+
 
 // Initialize your app with your bot token and signing secret
 const app = new App({
