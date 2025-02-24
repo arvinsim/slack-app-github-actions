@@ -1,6 +1,3 @@
-// import 'dotenv/config'
-// import { App } from '@slack/bolt';
-
 require('dotenv').config()
 const { App } = require('@slack/bolt');
 
