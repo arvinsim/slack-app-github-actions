@@ -8,7 +8,7 @@
 
 ### Configure Slash Command
 
-1. Navigate to Slash Commands under Features.
+1. Navigate to `Features -> Slash Commands`
 2. Click Create New Command:
     - Command: /hello
     - Request URL: Your app’s URL (e.g., <https://yourdomain.com/hello>), but if you’re running locally you can use a tool like ngrok to expose <http://localhost:3000>.
@@ -40,6 +40,9 @@
 
 `node app.js`
 
-### Setup redirection for testing
+### Setup request url for testing
 
-ngrok http <PORT>
+1. Run ngrok, `ngrok http <PORT>`
+2. Copy the static url,
+3. Navigate to `Features -> Slash Commands`
+4. Edit the Slash Command and set the request url to `<static url>/slack/events`
