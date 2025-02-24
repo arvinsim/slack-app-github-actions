@@ -1,0 +1,23 @@
+{
+  "name": "slack-app-github-actions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arvinsim/slack-app-github-actions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arvinsim/slack-app-github-actions/issues"
+  },
+  "homepage": "https://github.com/arvinsim/slack-app-github-actions#readme",
+  "description": "",
+  "dependencies": {
+    "@slack/bolt": "^4.2.0"
+  }
+}
