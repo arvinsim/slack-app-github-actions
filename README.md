@@ -34,6 +34,14 @@
 1. Navigate to `Basic Information -> App Credentials`
 2. Copy the signing secret into your `.env` file
 
+### Add app to channel
+
+Make sure you add the app to the channel where you want the app to reply to using one of the methods below
+
+1. Use the `/invite command`
+2. Use the channel's `Add an app` function
+3. Invite the App via Workspace Apps Page
+
 ## Running stuff
 
 ### Run the app

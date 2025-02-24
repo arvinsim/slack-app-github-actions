@@ -17,6 +17,24 @@ app.command('/hello', async ({ command, ack, say }) => {
   await say(`Hello, <@${command.user_id}>!`);
 });
 
+app.command('/github-action', async({ command, ack, say }) => {
+  await ack();
+
+  // `command.text` contains whatever the user typed AFTER the slash command
+  const userInput = command.text.trim(); // e.g., "production"
+
+  // For multiple parameters, you can split by space or parse however you want
+  const [githubAction] = userInput.split(' ');
+
+  if (!githubAction) {
+    await say('You need to pass a github action name i.e. `/github-action hello-world`');
+  } else if (githubAction === 'hello-world') {
+    await say('TODO: Run the hello-world github action');
+  } else {
+    await say(`The github action you provided, ${githubAction}, is not supported`);
+  }
+});
+
 // Start the Bolt app (defaults to port 3000)
 (async () => {
   const port = process.env.PORT || 3000;
